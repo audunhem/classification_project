@@ -23,7 +23,7 @@ title('Feature 4')
 
 %g = W*x + w_0;
 %W := [W w_0] (4x4)
-W = randn(3,4);
+W = zeros(3,4);
 a = 0.01;
 N = 150;
 x1all = [x1all ones(50,1) ones(50,1)];
