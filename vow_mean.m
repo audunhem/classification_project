@@ -1,31 +1,8 @@
 function mv = vow_mean(vow_n)
 vowels;
-v_0 = F0s(find(vowel_code==vow_n));
-mv(1) = mean(v_0);
-v_1s = F1s(find(vowel_code==vow_n));
-mv(2) = mean(v_1s);
-v_2s = F2s(find(vowel_code==vow_n));
-mv(3) = mean(v_2s);
-v_3s = F3s(find(vowel_code==vow_n));
-mv(4) = mean(v_3s);
-v_4s = F4s(find(vowel_code==vow_n));
-mv(5) = mean(v_4s);
-v_120 = F120(find(vowel_code==vow_n)); 
-mv(6) = mean(v_120);
-v_220 = F220(find(vowel_code==vow_n));
-mv(7) = mean(v_220);
-v_320 = F320(find(vowel_code==vow_n));
-mv(8) = mean(v_320);
-v_150 = F150(find(vowel_code==vow_n));
-mv(9) = mean(v_150);
-v_250 = F250(find(vowel_code==vow_n));
-mv(10) = mean(v_250);
-v_350 = F350(find(vowel_code==vow_n));
-mv(11) = mean(v_350);
-v_180 = F180(find(vowel_code==vow_n));
-mv(12) = mean(v_180);
-v_280 = F280(find(vowel_code==vow_n));
-mv(13) = mean(v_280);
-v_380 = F380(find(vowel_code==vow_n));
-mv(14) = mean(v_380);
+for i = 1:size(all_data, 2)
+    F = all_data(:,i);
+    v = F(find(vowel_code==vow_n));
+    mv(i) = mean(v);
+end
 end
