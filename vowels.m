@@ -6,7 +6,7 @@
 % character 1: m=man, w=woman, b=boy, g=girl
 % characters 2-3: talker number
 % characters 4-5: vowel (ae="had", ah="hod", aw="hawed", eh="head",
-% er="heard", ei="haid", ih="hid", iy="heed", oa=/o/ as in âboat",
+% er="heard", ei="haid", ih="hid", iy="heed", oa=/o/ as in "boat",
 % oo="hood", uh="hud", uw="who'd")
 
 vowel = str2mat('ae','ah','aw','eh','er','ei','ih','iy','oa','oo','uh','uw');
